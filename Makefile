@@ -1,9 +1,11 @@
 #!make
 
+PRERELEASE_TAG ?= beta
+
 PM = npm
 RM = rm -rf
 
-PRERELEASE_FLAG ?= beta
+PUBLISH_FLAGS = publish --access public
 
 MODULES = node_modules
 DIST = dist
